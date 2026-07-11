@@ -1,0 +1,53 @@
+.btn-mode{
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border: none;
+}
+.btn-mode i{
+    margin: 0 auto;
+}
+.btn-mode i:first-child{
+    color: yellow;
+    font-size: 1.5rem;
+    display: none;
+}
+.btn-mode i:last-child{
+    color: darkblue !important;
+    font-size: 1.5rem;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white !important;
+}
+
+body.dark-mode,
+body.dark-mode * {
+  color: white !important;
+}
+
+.text-light {
+    color: black !important;
+  }
+ body.dark-mode .black-text-responsive{
+    color: white !important;
+  }
+  /* لما يكون الوضع الليلي مفعل، غير لون النصوص اللي عندها text-light */
+  body.dark-mode .text-light {
+    color: black !important;
+  }
+  body.dark-mode .logo{
+    background-color: white;
+  }
+
+  
+

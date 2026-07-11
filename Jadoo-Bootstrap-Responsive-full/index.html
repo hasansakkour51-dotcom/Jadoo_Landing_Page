@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Volkhov -->
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/dark-mode.css">
+
+</head>
+<body>
+    <!--------start header-->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <nav class="nav d-flex align-items-center justify-content-start justify-content-md-between justify-content-sm-between">
+                <div class="col-2 col-lg-2 col-md-2 col-sm-2">
+                    <div class="logo">
+                        <img src="/image/Logo_(11).png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-7 col-lg-7 col-md-2 col-sm-1">
+                    <ul class="main-list d-flex d-lg-flex d-md-none d-sm-none gap-5 justify-content-center">
+                        <li><a href="">Desitnations</a></li>
+                        <li><a href="">Hotels</a></li>
+                        <li><a href="">Flights</a></li>
+                        <li><a href="" class="text-light">Bookings</a></li>
+                    </ul>
+                </div>
+
+                <!-----------hidden list------>
+                <button class="navbar-toggler col-1 d-lg-none d-md-flex d-sm-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+                    <span class="navbar-toggler-icon d-flex flex-column gap-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+            
+                
+                    <!-- القائمة الجانبية -->
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNav" style="background-color: #DF6951;">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title"></h5>
+                        <button type="button" class="btn-close-white" data-bs-dismiss="offcanvas">X</button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-start justify-content-center gap-5">
+                        <li class="nav-item"><a class="nav-link active" href="#">Desitnations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Flights</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Bookings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Log in</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+                    </ul>
+                    </div>    
+                </div>
+                <div class="col-3 col-lg-3 col-md-5 col-sm-9">
+                    <div class="register-btn d-flex gap-4 justify-content-end justify-content-lg-end justify-content-md-center justify-content-sm-center">
+                        <button><a href="" class="text-light">Login</a></button>
+                        <button><a href="" class="text-light">Sign up</a></button>
+                        <!-- زر تغيير اللغة -->
+                        <div class="dropdown">
+                            <button class="btn btn-transparent dropdown-toggle text-light" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            En
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item mode-text" data-lang="ar" href="?lang=ar">🇸🇦 العربية</a></li>
+                            <li><a class="dropdown-item mode-text" data-lang="en" href="?lang=en">🇬🇧 English</a></li>
+                            <li><a class="dropdown-item mode-text" href="?lang=fr">🇫🇷 Français</a></li>
+                            <li><a class="dropdown-item mode-text" href="?lang=es">🇪🇸 Español</a></li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <section class="hero-section position-relative">
+        <div class="container">
+            <div class="row d-flex flex-lg-row flex-md-row flex-sm-column-reverse align-items-lg-start align-items-md-start align-items-sm-center">
+                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                    <button class="btn-mode mb-5">
+                        <i class="fas fa-sun sun"></i>
+                        <i class="fas fa-moon moon"></i>
+                       </button>
+                      
+                    <div class="hero-content d-flex flex-column gap-5 text-lg-start text-md-start text-sm-center">
+                        <p class="mode-text">Best Destinations around the world</p>
+                        <h1 class="adress position-relative mode-text">
+                            Travel, enjoy
+                            and live a new
+                            and full life
+                        </h1>
+                        <p class="p-hero-content col-7 col-lg-7 col-md-12 col-sm-12 mode-text">
+                            Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
+                        </p>
+                        <div class="hero-button d-flex gap-5 justify-content-lg-start justify-content-md-start justify-content-sm-center">
+                            <a href="">Find out more</a>
+                            <a href="" class="d-flex gap-3 align-items-center mode-text">
+                                <span>
+                                    <img src="/image/Polygon_1.png" alt="Polygon">
+                                </span>
+                                Play Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="hero-img">
+                        <img src="/image/Traveller_1.png" alt="Traveller">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<!------start main-->
+<main id="main">
+    <!---start best-services -->
+<section class="best-services position-relative">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="best-services-title d-flex flex-column gap-3 align-items-center">
+                    <p>CATEGORY</p>
+                    <h2 class="adress">We Offer Best Services</h2>
+                </div>
+            </div>
+            <div class="plus-div">
+                <span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 cards-of-best-services d-flex flex-lg-row flex-md-row flex-sm-column gap-3">
+                <div class="col-3 col-md-3 col-sm-12">
+                    <div class="card d-flex flex-column align-items-center gap-4">
+                        <div class="img-card position-relative z-1">
+                            <img src="/image/Group_(1).png" alt="Group">
+                        </div>
+                        <div class="title-card text-center">
+                            <h3>Calculated Weather </h3>
+                            <p>
+                                Calculated Weather 
+                                Built Wicket longer admire do barton vanity itself do in it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-sm-12">
+                    <div class="card d-flex flex-column align-items-center gap-4">
+                        <div class="img-card position-relative z-1">
+                            <img src="/image/plane_(2).png" alt="Group">
+                        </div>
+                        <div class="title-card text-center">
+                            <h3 class="text-light">Calculated Weather </h3>
+                            <p class="text-light">
+                                Calculated Weather 
+                                Built Wicket longer admire do barton vanity itself do in it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-sm-12">
+                    <div class="card d-flex flex-column align-items-center gap-4">
+                        <div class="img-card position-relative z-1">
+                            <img src="/image/image_25.png" alt="Group">
+                        </div>
+                        <div class="title-card text-center">
+                            <h3>Calculated Weather </h3>
+                            <p>
+                                Calculated Weather 
+                                Built Wicket longer admire do barton vanity itself do in it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-3 col-sm-12">
+                    <div class="card d-flex flex-column align-items-center gap-4">
+                        <div class="img-card position-relative z-1">
+                            <img src="/image/power-supply_1.png" alt="Group">
+                        </div>
+                        <div class="title-card text-center">
+                            <h3>Calculated Weather </h3>
+                            <p>
+                                Calculated Weather 
+                                Built Wicket longer admire do barton vanity itself do in it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!---start top-destinations-section -->
+<section class="top-destinations-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-destinations-title d-flex flex-column gap-3 align-items-center">
+                    <p>Top Selling</p>
+                    <h2>Top Destinations</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mx-auto">
+                <div class="cards-of-destinations position-relative z-2" >
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_14.png" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_15.jpg" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_14.png" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_14.png" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_14.png" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-destinations">
+                                    <div class="img-of-card">
+                                        <a href="">
+                                            <img src="/image/Rectangle_14.png" alt="Rectangle">
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="content-of-card d-flex flex-column gap-3">
+                                        <div class="location-price d-flex justify-content-between">
+                                            <a href="" class="text-light">Rome, Italty</a>
+                                            <a href="" class="text-light">$5,42k</a>
+                                        </div>
+                                        <div class="dayes-of-trip d-flex gap-3">
+                                            <a href="" class="text-light">
+                                                <i class="fa-solid fa-rocket"></i>
+                                                10 Days Trip
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    
+</section>
+<!---start next-trip -->
+<section class="next-trip">
+    <div class="container">
+        <div class="row d-flex flex-lg-row flex-md-row flex-sm-column gap-5 ">
+            <div class="col-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="title-next-trip d-flex flex-column mb-4">
+                    <p>Easy and Fast</p>
+                    <h3 class="col-8 col-lg-8 col-md-12 col-sm-12">Book your next trip 
+                        in 3 easy steps</h3>
+                </div>
+                <div class="next-trip-content d-flex align-items-center gap-3 mb-3">
+                    <div class="img-next-trip">
+                        <a href="">
+                            <img src="/image/Group_7.png" alt="Group">
+                        </a>
+                    </div>
+                    <div class="description-next-trip d-flex flex-column gap-1">
+                        <a href="">Choose Destination</a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Urna, tortor tempus. 
+                        </p>
+                    </div>
+                </div>
+                <div class="next-trip-content d-flex align-items-center gap-3 mb-3">
+                    <div class="img-next-trip">
+                        <a href="">
+                            <img src="/image/Group_12.png" alt="Group">
+                        </a>
+                    </div>
+                    <div class="description-next-trip d-flex flex-column gap-1">
+                        <a href="">Choose Destination</a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Urna, tortor tempus. 
+                        </p>
+                    </div>
+                </div>
+                <div class="next-trip-content d-flex align-items-center gap-3 mb-3">
+                    <div class="img-next-trip">
+                        <a href="">
+                            <img src="/image/Group_11.png" alt="Group">
+                        </a>
+                    </div>
+                    <div class="description-next-trip d-flex flex-column gap-1">
+                        <a href="">Choose Destination</a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Urna, tortor tempus. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-lg-4 col-md-5 col-sm-12 align-items-center">
+                <div class="card-next-trip d-flex flex-column gap-3">
+                    <div class="img-card-next">
+                        <img src="/image/Rectangle_17.jpg" alt="Rectangle">
+                    </div>
+                    <div class="card-content-next-trip d-flex flex-column gap-2">
+                        <a href="" class="text-light">Trip To Greece</a>
+                        <div class="history d-flex gap-1">
+                            <a href="" class="text-light">14-29 June|</a>
+                            <a href="" class="text-light">by Robbin joseph</a>
+                        </div>
+                        <div class="social-card-next d-flex gap-3">
+                            <a href="">
+                                <img src="/image/LEAF.png" alt="leaf">
+                            </a>
+                            <a href="">
+                                <img src="/image/map_icon.png" alt="map-icon">
+                            </a>
+                            <a href="">
+                                <img src="/image/send.png" alt="send">
+                            </a>
+                        </div>
+                        <div class="people-going d-flex gap-2">
+                            <a href="">
+                                <img src="/image/building_1.png" alt="building">
+                            </a>
+                            <a href="" class="text-light">24 people going</a>
+                            <a class="mx-auto" href="">&hearts;</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------about-us----->
+<section class="about-us position-relative mt-5">
+    <!-- Swiper الخارجي: يحرك الصفوف -->
+<div class="swiper outerSwiper">
+<div class="swiper-wrapper">
+
+    <!-- شريحة 1 -->
+    <div class="swiper-slide">
+    <div class="row-container">
+        
+        <div class="left-section col-6">
+        <p>Testimonials</p>
+        <h3>
+            What people say
+            about Us.
+        </h3>
+        
+        </div>
+
+        <!-- يمين: سلايدر عمودي -->
+        <div class="right-section col-5">
+        <div class="swiper innerSwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <div class="card-slide-vertical d-flex flex-column gap-1">
+                    <p class="black-text-responsive">
+                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                    </p>
+                    <div class="author d-flex flex-column">
+                        <a href="" class="black-text-responsive">Mike taylor</a>
+                        <a href="" class="black-text-responsive">Lahore, Pakistan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="card-slide-vertical d-flex flex-column gap-1">
+                    <p class="black-text-responsive">
+                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                    </p>
+                    <div class="author d-flex flex-column">
+                        <a href="" class="black-text-responsive">Mike taylor</a>
+                        <a href="" class="black-text-responsive">Lahore, Pakistan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide"> 
+                <div class="card-slide-vertical d-flex flex-column gap-1">
+                    <p class="black-text-responsive">
+                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                    </p>
+                    <div class="author d-flex flex-column">
+                        <a href="" class="black-text-responsive">Mike taylor</a>
+                        <a href="" class="black-text-responsive">Lahore, Pakistan</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- شريحة 2 -->
+    <div class="swiper-slide">
+    <div class="row-container">
+        <div class="left-section col-6">
+        <p>Testimonials</p>
+        <h3>
+            What people say
+            about Us.
+        </h3>
+        </div>
+        <div class="right-section col-5">
+        <div class="swiper innerSwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card-slide-vertical d-flex flex-column gap-1">
+                    <p class="black-text-responsive">
+                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                    </p>
+                    <div class="author d-flex flex-column">
+                        <a href="" class="black-text-responsive">Mike taylor</a>
+                        <a href="" class="black-text-responsive">Lahore, Pakistan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-slide-vertical d-flex flex-column gap-1">
+                    <p class="black-text-responsive">
+                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                    </p>
+                    <div class="author d-flex flex-column">
+                        <a href="" class="black-text-responsive">Mike taylor</a>
+                        <a href="" class="black-text-responsive">Lahore, Pakistan</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="pagination d-flex flex-column align-items-center justify-content-center gap-5">
+    <span class="mode-text">></span>
+    <span class="mode-text">></span>
+    </div>
+</div>
+</div>
+
+</section>
+<!-----------start image section-->
+<section class="image">
+    <div class="container">
+        <div class="row d-flex flex-lg-row flex-md-row flex-sm-column align-items-center justify-content-between text-sm-center">
+            <div class="col-2 col-lg-2 col-md-2 col-sm-12"><img src="/image/image_27.png" alt="image"></div>
+            <div class="col-2 col-lg-2 col-md-2 col-sm-12"><img src="/image/image_28.png" alt="image"></div>
+            <div class="col-4 col-lg-4 col-md-2 col-sm-12"><img src="/image/Group_63.png" alt="image"></div>
+            <div class="col-2 col-lg-2 col-md-2 col-sm-12"><img src="/image/image_30.png" alt="image"></div>
+            <div class="col-2 col-lg-2 col-md-2 col-sm-12"><img src="/image/image_31.png" alt="image"></div>
+        </div>
+    </div>
+</section>
+<!------------start subscribe-section-->
+ <section class="subscribe-section position-relative">
+    <div class="float-img">
+        <a href=""><img src="/image/Group_77.png" alt="Group"></a>
+    </div>
+    <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="circles circles-2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="subscribe-content d-flex flex-column align-items-center gap-5">
+                <div class="title-subscribe">
+                    <h4 class="text-light">
+                        Subscribe to get information, latest news and other
+                        interesting offers about Jadoo
+                    </h4>
+                </div>
+                
+                <form class="form d-flex flex-lg-row flex-md-row flex-sm-column gap-3 align-items-center">
+                    <div class="input-container">
+                        <i class="fas fa-envelope"></i>
+                    <input type="email" class="input" placeholder="Your email">
+                    </div>
+                    
+                    <a href="" class="subscribe-btn text-light">
+                        subscribe
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="plus-div">
+        <span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span><span>+</span>
+    </div>
+ </section>       
+
+</main>
+<!----------start footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-lg-3 col-md-4 col-sm-6">
+                <div class="logo-footer">
+                    <a href="">
+                        <img src="/image/Jadoo.png" alt="jadoo">
+                    </a>
+                </div>
+                <p class="mt-5">
+                    Book your trip in minute, get full
+                    Control for much longer.
+                </p>
+            </div>
+            <div class="col-2 col-lg-2 col-md-4 col-sm-6 mt-lg-0 mt-md-0 mt-sm-5">
+                <div class="company links d-flex flex-column gap-2">
+                    <h6>Company</h6>
+                    <a href="">About</a>
+                    <a href="">Careers</a>
+                    <a href="">Mobile</a>
+                </div>
+            </div>
+            <div class="col-2 col-lg-2 col-md-4 col-sm-6 mt-lg-0 mt-md-0 mt-sm-5">
+                <div class="contact-links d-flex flex-column gap-2">
+                    <h6>Contact</h6>
+                    <a href="">Help/FAQ</a>
+                    <a href="">Press</a>
+                    <a href="">Affilates</a>
+                </div>
+            </div>
+            <div class="col-2 col-lg-2 col-md-5 col-sm-6 mt-lg-0 mt-md-5 mt-sm-5">
+                <div class="more-links d-flex flex-column gap-2">
+                    <h6>More</h6>
+                    <a href="">Airlinefees</a>
+                    <a href="">Airline</a>
+                    <a href="">Low fare tips</a>
+                </div>
+            </div>
+            <div class="col-3 col-lg-3 col-md-5 col-sm-6 mt-lg-0 mt-md-5 mt-sm-5">
+                <div class="parent d-flex flex-column align-items-start gap-2">
+                    <div class="social-foot d-flex gap-2">
+                        <a href="">
+                            <img src="/image/Social.png" alt="facebook">
+                        </a>
+                        <a href="">
+                            <img src="/image/Social_(1).png" alt="instagram">
+                        </a>
+                        <a href="">
+                            <img src="/image/Social_(2).png" alt="twitter">
+                        </a>
+                    </div>
+                    <p>Discover our app</p>
+                    <div class="btn-foot d-flex align-items-center gap-3">
+                        <a class="google-play d-flex align-items-center gap-1">
+                            <div class="google-play-img">
+                                <img src="/image/google-play_1_(1).png" alt="google-play">
+                            </div>
+                                
+                            
+                                GET IT ON
+                                GOOGLE PLAY
+
+                        </a>
+                            
+                        </a>
+                        <a class="app-store d-flex align-items-center gap-1">
+                            <div class="app-img">
+                                <img src="/image/apple_(2)_1.png" alt="apple">
+                            </div>
+                            Avalibile on the 
+                            App Store
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+<!---------------start js ----------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  pagination: {
+    el: '.pagination-my-slider',
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+
+
+
+
+
+
+</script>
+<script>
+    // السلايدر الخارجي (أفقي)
+    const outerSwiper = new Swiper(".outerSwiper", {
+      direction: "horizontal",
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      grabCursor: true,
+    });
+  
+    // السلايدر الداخلي (عمودي داخل كل صف)
+    document.querySelectorAll(".innerSwiper").forEach((el) => {
+      new Swiper(el, {
+        direction: "vertical",
+        loop: true,
+        pagination: {
+          el: el.querySelector(".pagination"),
+          clickable: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 10,
+      });
+    });
+</script>
+
+<script>
+
+const translations = {
+      ar: {
+        title: "تتمتع بالسفر, والعيش والحياة الجديدة والكاملة",
+        description: "هذا الموقع يدعم الترجمة بين اللغات.",
+        actionBtn: "اكتشف المزيد",
+        actionBtn2: "عرض توضيحي"
+
+      },
+      en: {
+        title: "Travel, enjoy and live a new and full life",
+        description: "We Offer Best Services",
+        actionBtn: "Get Started"
+      }
+    };
+
+
+    let lang=''
+
+document.querySelectorAll('.dropdown-item').forEach(item =>{
+    item.addEventListener('click', function(e){
+        e.preventDefault();
+        const selectedLang = this.getAttribute('data-lang');
+        localStorage.setItem('siteLang', selectedLang);
+        location.reload();
+    })
+} );
+
+window.addEventListener('DOMContentLoaded', ()=>{
+     lang = localStorage.getItem('siteLang') || 'en';
+    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.getElementsByClassName("adress")[0].textContent = translations[lang].title;
+    document.getElementsByClassName("adress")[1].textContent = translations[lang].description;
+
+});
+
+
+</script>
+ 
+<script>
+    let btnMode = document.querySelector('.btn-mode');
+    let sun = document.querySelector('.sun');
+    let moon = document.querySelector('.moon');
+    btnMode.addEventListener('click', function(){
+        document.body.classList.toggle('dark-mode');
+        if(document.body.classList.contains('dark-mode')){
+            sun.style.display="none";
+            moon.style.display="inline-block";
+            localStorage.setItem('mode', 'dark');
+        }
+        else {
+            sun.style.display="inline-block";
+            moon.style.display="none";
+            localStorage.setItem('mode','light');
+        }});
+        document.addEventListener('DOMContentLoaded',function() {
+            if(localStorage.getItem('mode')==='dark'){
+                 sun.style.display="none";
+                 moon.style.display="inline-block";
+                  document.body.classList.add('dark-mode');
+            }
+             else if(localStorage.getItem('mode')==='light'){
+                sun.style.display="inline-block";
+                 moon.style.display="none";
+                 document.body.classList.remove('dark-mode');
+            }
+
+            if(document.body.classList.contains('dark-mode')){
+                sun.style.display="none";
+                 moon.style.display="inline-block";
+            }
+            else{
+                 sun.style.display="inline-block";
+                 moon.style.display="none";
+            }
+           
+
+    });
+    const mediaQuery = window.matchMedia("(max-width: 575px)");
+let modeText = document.querySelectorAll('.mode-text');
+
+function updateTextClass() {
+  const isSmallScreen = mediaQuery.matches;
+  const isDarkMode = document.body.classList.contains('dark-mode');
+
+  modeText.forEach(function(el) {
+    if (isSmallScreen && isDarkMode) {
+      el.classList.add('black-text-responsive');
+    } else {
+      el.classList.remove('black-text-responsive');
+    }
+  });
+}
+
+function handleScreenChange(e) {
+  updateTextClass();
+}
+
+mediaQuery.addEventListener("change", handleScreenChange);
+
+
+window.addEventListener("DOMContentLoaded", updateTextClass);
+
+</script>
+    
+
+
+
+
+
+   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
